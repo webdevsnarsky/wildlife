@@ -1,0 +1,22 @@
+{
+  "name": "willife",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webdevsnarsky/wildlife.git"
+  },
+  "author": "snarsky alexander",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webdevsnarsky/wildlife/issues"
+  },
+  "homepage": "https://github.com/webdevsnarsky/wildlife#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
