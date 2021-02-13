@@ -20,7 +20,7 @@ let path = {
     },
     watch: {
         html: source_folder + '/**/*.html',
-        css: source_folder + '/scss/style.scss',
+        css: source_folder + '/scss/*.scss',
         js: source_folder + '/js/**/*.js',
         img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
     },
@@ -107,16 +107,16 @@ function js() {
 
 function images() {
     return src(path.src.img)
-        .pipe(
-            imagemin(
-                {
-                    progressive: true,
-                    svgoPlugins: [{ removeViewBox: false}],
-                    interlaced: true,
-                    optimizationLevel: 3 // 0 to 7
-                }
-            )
-        )
+        // .pipe(
+        //     imagemin(
+        //         {
+        //             progressive: true,
+        //             svgoPlugins: [{ removeViewBox: false}],
+        //             interlaced: true,
+        //             optimizationLevel: 3 // 0 to 7
+        //         }
+        //     )
+        // )
 
         .pipe(dest(path.build.img))
         .pipe(browsersync.stream())

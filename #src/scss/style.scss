@@ -11,11 +11,31 @@
 
 
 @import 'fonts';
+@import 'header';
+@import 'main';
 
-body {
-    font-size: 18px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.header {
-    color: red
+html {
+    height: 100%;
+}
+
+body {
+    // height: 100%;
+    margin: 0;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: "Roboto", sans-serif;
+}
+  
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 120px;
 }
