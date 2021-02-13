@@ -12,12 +12,12 @@
         <header class="header">
             <div class="header__container container">
                 <div class="header__top">
-                    <div class="logo-wrap">
+                    <a class="logo-wrap" href="#">
                         <!-- <div class="header__logo"> -->
                             <img src="./img/logo.svg" alt="" class="logo">
                             <h1 class="logo__text">wildlife</h1>
                         <!-- </div> -->
-                    </div>
+                    </a>
                     <nav class="header__navigation">
                         <ul class="navigation">
                             <li class="navigation__item"><a class="navigation__link active" href="#">Blog</a></li>
@@ -35,9 +35,56 @@
             </div>
         </header>
         <main class="main">
-        
+            <div class="main-container container">
+                <h2 class="main__title">Latest articles</h2>
+                <div class="main__descr">Breaking news from the wild</div>
+                <div class="slider-wrap">
+                    <div class="slider">
+                        <div class="slide">
+                            <img class="slide__image" src="./img/slider/1.jpg" alt="Deer"></img>
+                            <div class="slide__title">Deer</div>
+                            <div class="slide__descr">Naturalist investigation</div>
+                        </div>
+                        <div class="slide">
+                            <img class="slide__image" src="./img/slider/2.jpg" alt="Squirrel"></img>
+                            <div class="slide__title">Squirrel</div>
+                            <div class="slide__descr">Kamikaze squirrels</div>
+                        </div>
+                        <div class="slide">
+                            <img class="slide__image" src="./img/slider/3.jpg" alt="Bird"></img>
+                            <div class="slide__title">Bird</div>
+                            <div class="slide__descr">Birds Fight club</div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mailing__title">Get notified about new amazing articles</h3>
+                <div class="main__submit-wrap">
+                <form action="POST" class="form">
+                    <input id="email" name="email" type="email" placeholder="Email (Required)" class="form-input" required>
+                    <button type="submit" class="form-button">Submit</button>
+                </form>
+                </div>
+            </div>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <a class="logo-wrap" href="#">
+                <!-- <div class="header__logo"> -->
+                    <img src="./img/logo.svg" alt="" class="logo">
+                    <h1 class="logo__text">wildlife</h1>
+                <!-- </div> -->
+            </a>
+            <div class="footer__nav">
+                <a href="#" class="footer__link">Articles</a>
+                <a href="#" class="footer__link">About us</a>
+                <a href="#" class="footer__link">Learn more</a>
+            </div>
+            <div class="footer__socials">
+                    <a href="#" class="social"><object data="./img/socials/facebook.svg" type="image/svg+xml"></object></a>
+                    <a href="#" class="social"><object data="./img/socials/inst.svg" type="image/svg+xml"></object></a>
+                    <a href="#" class="social"><object data="./img/socials/pinterest.svg" type="image/svg+xml"></object></a>
+                    <a href="#" class="social"><object data="./img/socials/telegramm.svg" type="image/svg+xml"></object></a>
+            </div>
+        </footer>
     
     <script src="js/script.js"></script>
 </body>
