@@ -12,12 +12,10 @@
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    // .header__logo {
         .logo__text {
             text-transform: uppercase;
             color: #ffffff;
         }
-    // }
 }
 
 .header {
@@ -25,25 +23,19 @@
     .header__container {
         padding: 20px 120px 120px;
         background: #141218 no-repeat url('../img/header-bg.jpg');
-        //filter: drop-shadow(-150px 0px 150px #02160B);
         border-radius: 0px;
-        // -webkit-box-shadow: inset 1px 0px 40px 20px rgba(0,0,0,0.75);
-        // -moz-box-shadow: inset 1px 0px 40px 25px rgba(0,0,0,0.75);
         box-shadow: inset 1px 0px 45px 40px rgba(0,0,0,0.75);
             .header__top {
             padding-bottom: 120px;
             display: grid;
             grid-template-columns: 1fr 2fr;
-            // grid-column-gap: 35%;
-            
 
             .header__navigation {
                 display: grid;
-                // align-content: end;
                 .navigation {
                     display: grid;
                     grid-template-columns: repeat(4, auto);
-                    grid-column-gap: 25px;
+                    grid-column-gap: 6px;
                     text-align: center;
                     align-items: center;
                     justify-content: right;
@@ -57,13 +49,15 @@
                             padding: 10px 23px;
                             border: 2px solid transparent;
                             border-radius: 5px;
-                            // &:nth-child(4) {
-                            //     border: 2px solid #CD6326;
-                            // }
                             &:hover {
                                 border: 2px solid #CD6326;
                                 border-radius: 5px;
                             }
+                        }
+                        img.navigation__link {
+                            padding-top: 14px;
+                            padding-left: 47px;
+                            padding-right: 47px;
                         }
                     }
                 }

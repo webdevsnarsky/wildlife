@@ -61,7 +61,7 @@
 .header .header__container .header__top .header__navigation .navigation {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  grid-column-gap: 25px;
+  grid-column-gap: 6px;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -88,6 +88,12 @@
 .header .header__container .header__top .header__navigation .navigation .navigation__item .navigation__link:hover {
   border: 2px solid #CD6326;
   border-radius: 5px;
+}
+
+.header .header__container .header__top .header__navigation .navigation .navigation__item img.navigation__link {
+  padding-top: 14px;
+  padding-left: 47px;
+  padding-right: 47px;
 }
 
 .header .header__container .header__content .header__title {
