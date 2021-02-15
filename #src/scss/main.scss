@@ -1,0 +1,83 @@
+.main {
+    background-color: #CCCCCC;
+    .main-container {
+        padding: 120px 120px 240px;
+        .main__title {
+            padding-bottom: 20px;
+            text-align: center;
+            font-family: 'OpenSans', sans-serif;
+            font-weight: normal;
+            font-size: 48px;
+            line-height: 72px;
+        }
+
+        .main__descr {
+            padding-bottom: 120px;
+            font-family: 'OpenSans', sans-serif;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            color: #666666;
+        }
+
+        .slider {
+            position: relative;
+            .slider-wrap { 
+                display: grid;
+                grid-template-columns: repeat(3, 300px);
+                grid-template-rows: 360px;
+                grid-column-gap: 60px;
+                justify-content: center;
+                // justify-items: center;
+                .slide {
+                    .slide-wrap {
+                        position: relative;
+                    .slide__image {
+                        position: absolute;
+                    }
+                    }
+                }
+            }
+
+            .control.left {
+                left: 0%;
+                right: auto;
+            }
+
+            .control.right {
+                left: auto;
+                right: -2.5%;
+            }
+
+            .control {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 6%;
+                cursor: pointer;
+            }
+
+            .arrow {
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-70%);
+                user-select: none;
+            }
+
+            
+        }
+        .notified {
+            .notified__title {
+                padding-top: 240px;
+                font-family: 'OpenSans';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 150%;
+                line-height: 40px;
+                text-align: center;
+            }
+        }
+    }
+}

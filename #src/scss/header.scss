@@ -21,7 +21,7 @@
 .header {
     background-color: #000000;
     .header__container {
-        padding: 20px 120px 120px;
+        padding: 19px 120px 240px;
         background: #141218 no-repeat url('../img/header-bg.jpg');
         border-radius: 0px;
         box-shadow: inset 1px 0px 45px 40px rgba(0,0,0,0.75);
@@ -75,16 +75,16 @@
             }
 
             .header__descr {
-                padding-bottom: 51px;
+                padding-bottom: 48px;
                 font-family: 'OpenSans';
                 font-size: 18px;
-                line-height: 27px;
+                line-height: 155%;
                 max-width: 275px;
                 color: #F7F7F7;
             }
 
             .header__button {
-                padding: 16px 42px;
+                padding: 17px 43px;
                 border-radius: 5px;
                 font-size: 23px;
                 line-height: 27px;
