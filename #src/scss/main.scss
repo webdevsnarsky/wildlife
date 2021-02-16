@@ -69,14 +69,58 @@
             
         }
         .notified {
+            padding: 240px 0;
             .notified__title {
-                padding-top: 240px;
                 font-family: 'OpenSans';
                 font-style: normal;
                 font-weight: normal;
                 font-size: 150%;
                 line-height: 40px;
                 text-align: center;
+            }
+
+            .notified__submit-wrap {
+                padding-top: 60px;
+                text-align: center;
+                .form {
+                    display: grid;
+                    grid-template-columns: minmax(120px, 540px) 1fr;
+                    max-width: 630px;
+                    margin: 0 auto;
+                    .form-input {
+                        outline: none;
+                        background-color: #CCCCCC;
+                        border: #666666 solid 1px;
+                        border-right: none;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 23px;
+                        line-height: 27px;
+                        padding: 10px 0;
+                    }
+                    .form-button {
+                        outline: none;
+                        background: #CD6326;
+                        border: 1px solid #CD6326;
+                        border-radius: 0px 5px 5px 0px;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 23px;
+                        line-height: 27px;
+                        color: #F7F7F7; 
+                        &:hover{
+                            background: #E39128;
+                            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                            cursor: pointer;
+                        }
+                        &:active {
+                            background: #8F5613;
+                            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        }
+                    }
+                }
             }
         }
     }
