@@ -39,19 +39,35 @@
                 justify-content: center;
                 align-items: center;
                 cursor: pointer;
+                    // svg:hover {
+                    //     .fb {
+                    //         fill: red;
+                    //     }
+                    // }
                 .social__obj {
-                    cursor: pointer;
-                }
+                    max-width: 40px;
+                    // .fb {
+                    //     fill: red;
+                    // }
+                }        
                 
             }
 
-            .social__link + object:hover {
-                cursor: pointer;
-            }
+            // .social__link .social__obj {
+            //     // width: 21px;
+            //     // height: 27px;
+            //     svg:hover {
+            //         fill: red;
+            //     }
+            // }
+
+            // .social__link + object:hover {
+            //     cursor: pointer;
+            // }
         }
     }
 }
 
-.fb {
+.fb:hover {
     fill: red;
 }
