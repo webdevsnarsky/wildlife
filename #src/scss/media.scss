@@ -1,0 +1,94 @@
+@media screen and (max-width: 968px) {
+    .header {
+        .header__container {
+            .header__top {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, auto);
+                grid-row-gap: 30px;
+                padding-bottom: 15%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        .header__container {
+            padding: 30px 80px 190px;
+           .header__top {
+                .header__navigation {
+                    .navigation {
+                        grid-template-columns: repeat(auto-fit, 120px);
+                        justify-content: space-between;
+                        .navigation__item {
+                            .navigation__link {
+                                font-size: 20px;
+                            }
+                            img.navigation__link {
+                                padding: 14px 47px;
+                                max-width: 118px;
+                            }
+                        }
+                    }
+                }
+           }
+        }
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        .header__container {
+            padding: 30px 50px 160px;
+            .header__top {
+                .header__navigation {
+                    .navigation {
+                        grid-template-columns: repeat(auto-fit,108px);
+                        .navigation__item {
+                            .navigation__link {
+                                padding: 10px 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header {
+        .header__container {
+            padding: 30px 40px 135px;
+            .header__top {
+                .header__navigation {
+                    .navigation {
+                        grid-template-columns: repeat(auto-fit, 117px);
+                        .navigation__item {
+                            .navigation__link {
+                                font-size: 16px;
+                            }
+                            img.navigation__link {
+                                padding: 14px 47px;
+                                max-width: 118px;
+                            }
+                        }
+                    }
+                }
+            }
+            .header__content {
+                .header__title {
+                    font-size: 36px;
+                }
+                .header__descr {
+                    font-size: 14px;
+                }
+                .header__button {
+                    padding: 12px 43px;
+                    font-size: 20px;
+                }
+            }
+        }
+    } 
+}
