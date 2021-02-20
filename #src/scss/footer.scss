@@ -1,19 +1,20 @@
 .footer {
     background-color: #000000;
     .footer-container {
-        padding: 125px 120px;
-        background: #141218 no-repeat url('../img/footer-bg.jpg');
+        padding: 9.8% 120px;
+        background: #141218 no-repeat center center url('../img/footer-bg.jpg');
         border-radius: 0px;
         box-shadow: inset 1px 0px 50px 15px rgba(0,0,0,0.75);
         display: grid;  
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: auto 40% auto;
         justify-content: space-between;
         align-items: center;
 
         .footer__nav {
             display: grid;
             grid-template-columns: repeat(3, auto);
-            grid-column-gap: 85px;
+            justify-content: space-between;
+            // grid-column-gap: 88px;
             .footer__link {
                 border-radius: 50%;
                 color: #F7F7F7;
