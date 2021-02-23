@@ -82,6 +82,9 @@
                 bottom: 0;
                 width: 5%;
                 cursor: pointer;
+                &:hover .arrow {
+                    filter: invert(38%) sepia(88%) saturate(657%) hue-rotate(344deg) brightness(97%) contrast(87%);
+                }
             }
 
             .arrow {
@@ -90,6 +93,10 @@
                 top: 50%;
                 transform: translateY(-40%);
                 user-select: none;
+                // &:hover {
+                //     filter: invert(38%) sepia(88%) saturate(657%) hue-rotate(344deg) brightness(97%) contrast(87%);
+                // }
+                
             }
 
             
