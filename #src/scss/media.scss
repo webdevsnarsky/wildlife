@@ -76,6 +76,12 @@
         }
     }
 
+    .survival {
+        .survival__container {
+            padding: 30px 80px 190px;
+        }
+    }
+
     .main {
         .main-container {
             padding: 120px 80px 240px;
@@ -109,6 +115,12 @@
         }
     }
 
+    .survival {
+        .survival__container {
+            padding: 30px 50px 160px;
+        }
+    }
+
     .main {
         .main-container {
             padding: 120px 30px 160px;
@@ -132,6 +144,7 @@
                         
                         .form-input {
                             border-right:#666 solid 1px;
+                            font-size: 21px;
                         }
                         .form-button {
                             border-radius: 5px;
@@ -157,9 +170,15 @@
 }
 
 @media screen and (max-width: 320px) {
+    body {
+        background-color: #071a0a;
+    }
+    .wrapper {
+        background-image: none;
+    }
     .header {
         .header__container {
-            padding: 30px 40px 135px;
+            padding: 30px 30px 135px;
             .header__top {
                 .header__navigation {
                     .navigation {
@@ -190,4 +209,10 @@
             }
         }
     } 
+
+    .survival {
+        .survival__container {
+            padding: 30px 30px 135px;
+        }
+    }
 }
