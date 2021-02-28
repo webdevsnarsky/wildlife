@@ -65,10 +65,23 @@
                             border-radius: 5px;
                             user-select: none;
                             transition: all .5s ease;
+                            cursor: pointer;
                             &:hover {
+                                background-color: #CD6326;
                                 border: 2px solid #CD6326;
                                 border-radius: 5px;
                             }
+                            &:active {
+                                background-color: #8F5613;
+                                border: 2px solid #8F5613;
+                                border-radius: 5px;
+                            }
+                        }
+
+                        button.navigation__link {
+                            // cursor: pointer;
+                            background-color: transparent;
+                            outline: none;
                         }
                         .navigation__link-active {
                             border: 2px solid #CD6326;
