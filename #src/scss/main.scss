@@ -68,7 +68,7 @@
         }
 
         .slider {
-            display: none;
+            // display: none;
             position: relative;
             .slider-wrap { 
                 display: grid;
@@ -76,7 +76,6 @@
                 grid-template-rows: 360px;
                 grid-column-gap: 60px;
                 justify-content: center;
-                // justify-items: center;
                 .slide {
                     position: relative;
                     // .slide-wrap {
