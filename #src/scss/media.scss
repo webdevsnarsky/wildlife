@@ -22,7 +22,7 @@
 
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 975px) {
     .header {
         .header__container {
             .header__top {
@@ -131,6 +131,13 @@
                 font-size: 20px;
                 padding-bottom: 60px;
             }
+
+            .slider {
+                padding: 10%;
+                .control.right {
+                    right: -1.5%;
+                }
+            }
             .notified {
                 padding-top: 120px;
                 .notified__title {
@@ -209,6 +216,22 @@
             }
         }
     } 
+
+    .main {
+        .main-container {
+            .slider {
+                .control {
+                    width: 14%;
+                }
+                .control.right {
+                    right: -10%
+                }
+                .control.left {
+                    left: -8%;
+                }
+            }
+        }
+    }
 
     .survival {
         .survival__container {
