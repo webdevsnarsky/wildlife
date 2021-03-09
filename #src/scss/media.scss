@@ -133,10 +133,10 @@
             }
 
             .slider {
-                padding: 10%;
-                .control.right {
-                    right: -1.5%;
-                }
+                padding: 0 10%;
+                // .control.right {
+                //     right: -1.5%;
+                // }
             }
             .notified {
                 padding-top: 120px;
@@ -220,14 +220,21 @@
     .main {
         .main-container {
             .slider {
+                padding: 0%;
                 .control {
                     width: 14%;
                 }
+
+                .arrow {
+                    img {
+                        width: 100%;
+                    }
+                }
                 .control.right {
-                    right: -10%
+                    right: -13%
                 }
                 .control.left {
-                    left: -8%;
+                    left: -13%;
                 }
             }
         }
