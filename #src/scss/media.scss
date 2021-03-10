@@ -104,6 +104,8 @@
                 .header__navigation {
                     .navigation {
                         grid-template-columns: repeat(auto-fit,108px);
+                        grid-row-gap: 10px;
+                        justify-items: center;
                         .navigation__item {
                             .navigation__link {
                                 padding: 10px 20px;

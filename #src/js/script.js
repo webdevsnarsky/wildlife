@@ -4,6 +4,7 @@ let navContainer = document.querySelector('.navigation');
 let arrayNavItems = Array.from(navContainer.querySelectorAll('.navigation__link'));
 let slider = document.querySelector('.slider-wrap');
 let slide = slider.querySelectorAll('.slide');
+let browserWidth = document.documentElement.clientWidth;
 let count = 0;
 let width;
 let gap;
@@ -54,19 +55,32 @@ function rollSlider() {
 document.querySelector('.left').addEventListener('click', () => {
     count--;
 
-    if (count < 0) {
+    if (count < 0 && browserWidth >= 959) {
         count = slide.length - 3;
+    } else if (count < 0 && (browserWidth <= 958 && browserWidth >= 769)) {
+        count = slide.length - 2;
+    } else if (count < 0 && browserWidth < 769) {
+            count = slide.length - 1;
     }
+    
     rollSlider();
 });
 
 
 document.querySelector('.right').addEventListener('click', () => {
     count++;
+    console.log(count);
+    console.log(browserWidth);
+    console.log(slide.length);
 
-    if (count >= slide.length - 2) {
+    if (count >= slide.length - 2 && browserWidth >= 959) {
+        count = 0;
+    } else if (count >= slide.length - 1 && (browserWidth <= 958 && browserWidth >= 769)) {
+        count = 0;
+    } else if (count >= slide.length && browserWidth < 769) {
         count = 0;
     }
+
     rollSlider();
 });
 navContainer.addEventListener('click', clickHandlerNavigation);
