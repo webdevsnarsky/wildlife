@@ -109,6 +109,17 @@
                         .navigation__item {
                             .navigation__link {
                                 padding: 10px 20px;
+                                &:hover {
+                                    background-color: transparent;
+                                }
+                                &:active {
+                                    background-color: transparent;
+                                }
+                            }
+
+                            img.navigation__link {
+                                padding: 12px 38px;
+                                max-width: none;
                             }
                         }
                     }
@@ -135,10 +146,7 @@
             }
 
             .slider {
-                padding: 0 10%;
-                // .control.right {
-                //     right: -1.5%;
-                // }
+                padding: 0 8%;
             }
             .notified {
                 padding-top: 120px;
@@ -224,7 +232,7 @@
             .slider {
                 padding: 0%;
                 .control {
-                    width: 14%;
+                    width: 12%;
                 }
 
                 .arrow {
@@ -233,10 +241,10 @@
                     }
                 }
                 .control.right {
-                    right: -13%;
+                    right: -12%;
                 }
                 .control.left {
-                    left: -13%;
+                    left: -12%;
                 }
             }
         }

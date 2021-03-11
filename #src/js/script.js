@@ -20,9 +20,15 @@ function initFunc() {
     width = document.querySelector('.slider-wrapper').offsetWidth;
     let countSlides;
     let widthOfColumn;
+    let widthOfSectionPercent;
+    let HeightOfSectionPixel;
+    let defaultWidth;
 
     if (width >= 1020) {
         gap = 60;
+        // heightOfSection = 360;
+        slider.style.gridTemplateRows = `${HeightOfSectionPixel}px`;
+        
     } else if (width <= 547.2) {
         gap = 0;
     } else {
@@ -30,19 +36,31 @@ function initFunc() {
     }
 
     if (width > 725) {
+        defaultWidth = 1020;
         countSlides = 3;
         widthOfColumn = 100 - ((100 * (gap * 2)) / width);  
     } else if (width <= 725 && width >= 560) {
+        defaultWidth = 725;
         countSlides = 2;
         widthOfColumn = 100 - ((100 * gap) / width);  
     } else {
+        if (width <= 532 && width > 260) {
+            slider.style.gridTemplateRows = `${HeightOfSectionPixel = 360}px`;
+        }
+        if (width <= 259 && width > 240) {
+            defaultWidth = 250;
+        }
         countSlides = 1;
         widthOfColumn = 100 - ((100 * gap) / width);  
     }
 
+    widthOfSectionPercent = (width * 100) / defaultWidth;
+    HeightOfSectionPixel = (360 * widthOfSectionPercent) / 100;
+
     slider.style.gridColumnGap = gap +'px';
     slider.style.gridTemplateColumns = `repeat(6, ${widthOfColumn / countSlides}%)`;
-
+    // slider.style.gridTemplateRows = `minmax(266px, 100%)`;
+    slider.style.gridTemplateRows = `${HeightOfSectionPixel}px`;
     rollSlider();
 }
 
